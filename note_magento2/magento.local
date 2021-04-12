@@ -1,0 +1,7 @@
+server {
+        listen 80; 
+        set $MAGE_MODE developer;
+        server_name magento2.com;
+        set $MAGE_ROOT /var/www/html/magento2;
+        include /var/www/html/magento2/nginx.conf.sample;
+}
