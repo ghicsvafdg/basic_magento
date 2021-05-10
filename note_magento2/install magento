@@ -27,7 +27,6 @@ sudo apt-get install php7.3 libapache2-mod-php7.3 php7.3-mysql php7.3-soap php7.
 
 - config
   + 3 files
-    . sudo nano /etc/nginx/conf.d/default.conf
     . sudo nano /etc/nginx/sites-enabled/default
     . sudo nano /etc/nginx/sites-enabled/magento2.local
   + /etc/hosts
@@ -44,7 +43,7 @@ sudo apt-get install php7.3 libapache2-mod-php7.3 php7.3-mysql php7.3-soap php7.
  
  ssh-keygen -f "/home/tungnt/.ssh/known_hosts" -R "git02.smartosc.com"
  
- php bin/magento setup:static-content:deploy -f
+bin/magento setup:static-content:deploy -f
  
  113.190.242.76
 183.91.7.198
@@ -55,10 +54,4 @@ magento permission
 HTTPDUSER=`ps axo user,comm | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]ginx' | grep -v root | head -1 | cut -d\  -f1` && sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var pub/static pub/media app/etc generated && sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var pub/static pub/media app/etc generated && chmod u+x bin/magento
 
 
-a:19:{s:3:"sub";s:12:"gwf131116562";s:21:"org.ukvi.servicelevel";s:8:"standard";s:14:"email_verified";b:1;s:25:"com.tlscontact.applicants";s:12:"gwf131116562";s:34:"com.tlscontact.application.country";s:2:"fr";s:3:"iss";s:25:"https://uk.tlscontact.com";s:21:"com.tlscontact.client";s:2:"uk";s:3:"aud";s:32:"https://ecommerce.tlscontact.com";s:35:"com.tlscontact.application.esolourl";s:56:"https://selfupload.staging-visas-uk.tlscontact.com/login";s:3:"nbf";i:1605261396;s:44:"com.tlscontact.application.documentsrequired";b:1;s:45:"com.tlscontact.application.biometricsrequired";b:1;s:20:"org.ukvi.visasubtype";s:10:"visit-visa";s:31:"com.tlscontact.application.city";s:3:"par";s:3:"exp";i:1605261416;s:22:"com.tlscontact.project";s:2:"uk";s:3:"iat";i:1605261396;s:3:"jti";s:36:"06941e86-8a83-4469-a6d5-8807cf2c9ac3";s:5:"email";s:49:"gwf131116562_frpar_uk@test.efusion.tlscontact.com";}
-
-
 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.3.3 magento2
-
-
-https://github.com/vietensight/quanly_nhansu
