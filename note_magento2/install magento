@@ -23,7 +23,7 @@ ea0ce8fc12c3976b
       https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html
 
 // php extension      
-sudo apt-get install php7.3 libapache2-mod-php7.3 php7.3-mysql php7.3-soap php7.3-bcmath php7.3-xml php7.3-mbstring php7.3-gd php7.3-common php7.3-cli php7.3-gmp php7.3-mcrypt php7.3-curl php7.3-intl php7.3-zip zip unzip -y
+sudo apt-get install php7.3 libapache2-mod-php7.3 php7.3-fpm php7.3-mysql php7.3-soap php7.3-bcmath php7.3-xml php7.3-mbstring php7.3-gd php7.3-common php7.3-cli php7.3-gmp php7.3-mcrypt php7.3-curl php7.3-intl php7.3-zip zip unzip -y
 
 - config
   + 3 files
