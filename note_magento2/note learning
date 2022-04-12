@@ -1,5 +1,6 @@
 	-19035568318012- TECH
 	-21510001972772- BIDV
+	-1027516989-      VCB
 == extract .dev file ==
  sudo dpkg -i google-chrome-stable_current_amd64.deb
 =======================
