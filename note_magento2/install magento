@@ -57,3 +57,8 @@ HTTPDUSER=`ps axo user,comm | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]gin
 
 
 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.3.3 magento2
+
+-------------
+install log zend
+composer require zendframework/zend-log
+---------
