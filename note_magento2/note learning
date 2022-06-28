@@ -5,15 +5,18 @@
  sudo dpkg -i google-chrome-stable_current_amd64.deb
 =======================
 
-vendor/magento/framework/Exception/NoSuchEntityException.php
-
-
-foreach (debug_backtrace() as $_stack) {
-        echo ($_stack["file"] ? $_stack["file"] : '') . ':' .
-            ($_stack["line"] ? $_stack["line"] : '') . ' - ' .
-            ($_stack["function"] ? $_stack["function"] : '');
-     }
-    exit();
+log db
+---
+$log = [];
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+if ($actual_link == 'http://nsk.local/company/customer/manage/') {
+    $log = [
+        'output' => 'file',
+        'log_everything' => 1,
+        'query_time_threshold' => '0.001',
+        'include_stacktrace' => 0
+    ];
+}
 
 =======================
 DELETE FROM your_table
