@@ -51,3 +51,6 @@ config install xdebug php storm
     xdebug.mode=debug
     xdebug.client_port=9003
 
+==================
+access meta data config
+$metaData['general']['children']['sku']['arguments']['data']['config']['disabled'] = 1;
