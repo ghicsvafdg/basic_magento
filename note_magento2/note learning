@@ -37,7 +37,8 @@ composer require zendframework/zend-log
 ---------
 log bug cli
 XDEBUG_CONFIG=idekey=phpstorm
-
+debug API
+XDEBUG_SESSION_START=PHPSTORM
 =============
 config install xdebug php storm
  - install with php
