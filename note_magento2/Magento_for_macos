@@ -1,0 +1,15 @@
+========
+install magento
+========
+install homebrew
+install nginx, mysql, php
+---
+PHP change version
+brew unlink php@ver
+brew link php@ver
+echo
+echo
+source ~/.zshrc
+---
+
+install Magento (clone)
