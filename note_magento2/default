@@ -1,4 +1,4 @@
 upstream fastcgi_backend {
-    server  unix:/run/php/php7.3-fpm.sock;
+    server  unix:/var/run/php/php8.1-fpm.sock;
 }
 
