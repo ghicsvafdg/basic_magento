@@ -56,3 +56,7 @@ config install xdebug php storm
 ==================
 access meta data config
 $metaData['general']['children']['sku']['arguments']['data']['config']['disabled'] = 1;
+
+===
+coding standard
+vendor/bin/phpcbf --standard=vendor/magento/magento-coding-standard/Magento2 app/design/frontend/Kubota/honki/Magento_Swatches
