@@ -19,9 +19,9 @@ if (str_contains($actual_link, 'checkout/cart')) {
 
 ============ Unit Test doc ================
 run test:
-./vendor/bin/phpunit -c dev/tests/unit/phpunit.xml.dist app/code/Smartosc/Contact/Test/
+./vendor/bin/phpunit -c dev/tests/unit/phpunit.xml.dist folder_path
 coverage:
-XDEBUG_MODE=coverage ./vendor/bin/phpunit -c dev/tests/unit/phpunit.xml.dist --coverage-text  app/code/Smartosc/Contact/Test/
+XDEBUG_MODE=coverage ./vendor/bin/phpunit -c dev/tests/unit/phpunit.xml.dist --coverage-text  folder_path
 
 
 https://phpunit.de/manual/6.5/en/test-doubles.html
@@ -59,4 +59,4 @@ $metaData['general']['children']['sku']['arguments']['data']['config']['disabled
 
 ===
 coding standard
-vendor/bin/phpcbf --standard=vendor/magento/magento-coding-standard/Magento2 app/design/frontend/Kubota/honki/Magento_Swatches
+vendor/bin/phpcbf --standard=vendor/magento/magento-coding-standard/Magento2 folder_path
